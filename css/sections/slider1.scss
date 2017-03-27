@@ -1,0 +1,124 @@
+.main {
+    position: relative;
+    background-image: url(../img/bg/first-bg.jpg);
+    background-size: cover;
+}
+
+.header {
+    position: absolute;
+    min-height: 90px;
+    width: 100%;
+}
+
+.header-container {
+    transform: translateY(0);
+}
+
+.header__left {
+    float: left;
+    margin-top: 9px;
+}
+
+.header__right {
+    float: right;
+    margin-top: 27px;
+}
+
+.navigation__item {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        display: inline-block;
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+}
+
+.navigation__item_red {
+    background-color: $red;
+    border-radius: 5px;
+}
+
+.navigation__list :last-child::after,
+.navigation__list :nth-last-child(2)::after {
+    display: none;
+}
+
+.navigation__link {
+    @extend %buttons;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.navigation__link_order:hover {
+    text-decoration: none;
+}
+
+.main__left {
+    display: inline-block;
+    width: 51%;
+    vertical-align: middle;
+}
+
+.main__right {
+    display: inline-block;
+    width: 47%;
+    vertical-align: middle;
+}
+
+.main__left {
+    background: url(../img/icons/drops.svg) 50% 15% no-repeat;
+}
+
+.main__picture {
+    display: block;
+    position: relative;
+    top: -37px;
+    left: 50px;
+}
+
+.title__sign {
+    font-family: 'lifehack';
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 1.2;
+    max-height: 235px;
+    overflow: hidden;
+}
+
+.page-down__link {
+    display: inline-block;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -14px;
+    transition: bottom .3s;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 45px;
+        bottom: -10px;
+    }
+
+
+    &:hover {
+        position: absolute;
+        transform: scale(1.2);
+        bottom: 45px;
+        transition: .3s;
+    }
+}

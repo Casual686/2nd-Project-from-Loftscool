@@ -1,0 +1,58 @@
+.footer {
+    height: 60px;
+    background-image: url(../img/bg/seventh-bg2.png),
+                                    url(../img/bg/seventh-bg2.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.footer__left {
+    padding-top: 10px;
+    float: left;
+    width: 50%;
+}
+
+.footer__right {
+    padding-top: 20px;
+    float: right;
+    width: 50%;
+}
+
+.contacts__adresse {
+    margin-bottom: 8px;
+}
+
+.contacts__phone_pic {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+}
+
+.contacts__phone {
+    font-family: 'ubuntu';
+    font-weight: 600;
+    color: $red;
+}
+
+.social__list {
+    text-align: right;
+}
+
+.social__item {
+	display: inline-block;
+	margin-left: 16px;
+}
+
+.icons {
+    display: inline-block;
+	vertical-align: middle;
+	height: 20px;
+	width: 20px;
+	fill: $gray;
+
+    &:hover {
+        fill: $white;
+    }
+}

@@ -1,0 +1,46 @@
+.best {
+    background: url(../img/bg/second-bg.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.title_gray {
+    color: $gray;
+    padding: 55px 0;
+    box-sizing: border-box;
+}
+
+
+.advantage__list {
+    font-size: 0;
+     & * {
+         font-size: 14px;
+     }
+}
+
+.advantage__item {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.advantage__image {
+margin-bottom: 31px;
+}
+
+.advantage__title {
+    font-family: 'lifehack';
+    font-weight: 500;
+    font-size: 24.12px;
+    color: $gray;
+    max-height: 72px;
+    overflow: hidden;
+}
+
+.advantage__text {
+    font-family: 'ubuntu';
+    font-weight: 300;
+    color: rgba(47, 50, 52, .8);
+    max-height: 135px;
+    overflow: auto;
+}

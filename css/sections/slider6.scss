@@ -1,0 +1,70 @@
+.reviews {
+    position: relative;
+}
+
+.review__list {
+    position: absolute;;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+}
+
+.review__item {
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    vertical-align: top;
+
+    &:hover .review__text {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+
+    & * {
+        font-size: 14px;
+    }
+}
+
+.review__image {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.review__text {
+    height: 100%;
+    padding: 17% 7% 10% 7%;
+    opacity: 0;
+    box-sizing: border-box;
+    background-color: rgba(20, 20, 20, .7);
+    transform: scale3d(.8, .8, .8);
+    transition: .3s;
+}
+
+.review__text_name {
+    font-family: 'gagalin';
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review__text_desc {
+    font-weight: 300;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 53%;
+}
+
+.review__text_button {
+    @extend %buttons;
+    background-color: $gray;
+    border-radius: 5px;
+    font-size: 13px;
+}

@@ -1,0 +1,41 @@
+//variable
+$container-width: 940px;
+
+//colors
+$white: #fff;
+$yellow: #f9b43b;
+$gray: #2f3234;
+$red: #e45028;
+
+//Slider JQuery
+@import "slider/owl.carousel.min";
+@import "slider/owl.theme.default.min";
+@import "slider/owl.theme.green.min";
+
+//modal
+@import "modal/jquery.fancybox";
+
+//qtip
+@import "qtip/jquery.qtip";
+
+//layout
+@import "layout/normalize";
+@import "layout/adjustment";
+@import "layout/fonts";
+
+//sections
+@import "sections/slider1";
+@import "sections/slider2";
+@import "sections/slider3";
+@import "sections/slider4";
+@import "sections/slider5";
+@import "sections/slider6";
+@import "sections/slider7";
+@import "sections/slider8";
+@import "sections/footer";
+
+//modals window
+@import "sections/modals";
+
+//navigation
+@import "sections/aside-navigation";

@@ -1,0 +1,105 @@
+.team {
+    position: relative;
+    background-image: url(../img/bg/fourth-bg.jpg);
+    background-size: cover;
+}
+
+.team__conteiner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 51%;
+    background: rgba(47, 50, 52, .93);
+    padding: 6% 2% 0% 7%;
+}
+
+.team_title {
+    margin-bottom: 58px;
+}
+
+.team__list {
+    margin-left: 18px;
+}
+
+.team__person {
+    font-family: 'gagalin';
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.team__person_name {
+    position: relative;
+    color: $white;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: -18px;
+        border-top: 7px solid $yellow;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 0px solid transparent;
+        transform: rotate(0deg);
+        transition: .5s;
+    }
+}
+
+.ui-accordion-header-active {
+        color: $yellow;
+
+        &::before {
+            transform: rotate(-180deg);
+        }
+}
+
+
+// .team__person_active {
+//     .team__person_description {
+//         display: block;
+//     }
+//     .team__person_name {
+//         color: $yellow;
+//
+//         &::before {
+//             transform: rotate(-180deg);
+//         }
+//     }
+//
+// }
+
+.person__foto {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.team__person_description {
+    display: none;
+    padding-top: 14px;
+}
+
+.person__text {
+    display: inline-block;
+    width: 65%;
+    font-family: 'ubuntu';
+
+    & h4 {
+        font-weight: 600;
+        max-height: 40px;
+        overflow: hidden;
+    }
+    & p {
+        font-weight: 300;
+        overflow: auto;
+        max-height: 90px;
+    }
+}
